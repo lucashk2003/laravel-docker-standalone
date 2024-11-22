@@ -18,13 +18,13 @@ class ListUsersWithDevices extends Command
 
 
         foreach ($customers as $customer) {
-            $this->line('Nombre: ' . $customer->name);
+            $this->line('Nombre: ' . $customer->brand);
 
             // Si el cliente tiene dispositivos
             if ($customer->devices->isNotEmpty()) {
                 $this->line('  Dispositivos:');
                 foreach ($customer->devices as $device) {
-                    $this->line('    - ' . $device->name);
+                    $this->line('    - ' . $device->brand);
                 }
             } else {
                 $this->line('  No tiene dispositivos.');

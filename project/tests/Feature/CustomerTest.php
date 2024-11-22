@@ -22,12 +22,12 @@ class CustomerTest extends TestCase
         
         $device1 = Device::create([
             'name' => 'Iphone',
-            'customer_id' => $customer->id,
+            'costumer_id' => $customer->id,
         ]);
 
         $device2 = Device::create([
             'name' => 'Ipad',
-            'customer_id' => $customer->id,
+            'costumer_id' => $customer->id,
         ]);
 
         
